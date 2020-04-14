@@ -1,0 +1,146 @@
+body {
+  box-sizing: border-box;
+  font-family: "Open Sans";
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  position: relative;
+  margin: 20px 0;
+  padding-bottom: 20px;
+}
+h1:after {
+  content: "";
+  color: #424953;
+  border: 1px solid #424953;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+}
+
+.h-1 {
+  font-size: 25px;
+  position: relative;
+  margin: 20px 0;
+  padding-bottom: 20px;
+}
+.h-1:after {
+  content: "";
+  color: #424953;
+  border: 1px solid #424953;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+}
+
+.h-2 {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px 0;
+  margin-bottom: 20px;
+  position: relative;
+}
+.h-2:after {
+  content: "";
+  color: #f4f2f3;
+  border: 1px solid #f4f2f3;
+  width: 325px;
+  position: absolute;
+  bottom: 0px;
+  right: -25px;
+}
+
+.weight-bold {
+  font-weight: bold;
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+.paper {
+  display: flex;
+  width: 1000px;
+}
+.paper .photo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+.paper .photo #my-photo {
+  width: 250px;
+  border-radius: 50%;
+}
+.paper .main-data {
+  flex: 1;
+  background: #424953;
+  color: #f4f2f3;
+  padding: 50px 25px;
+}
+.paper .main-data .main-data-item {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+.paper .main-data a {
+  color: #f4f2f3;
+}
+.paper .main-data img {
+  width: 40px;
+  margin-top: 10px;
+}
+.paper .additional-data {
+  flex: 2;
+  background: #f4f2f3;
+  color: #424953;
+  padding: 50px 25px;
+}
+.paper .additional-data a {
+  color: #b18324;
+}
+.paper .additional-data .projects p {
+  display: flex;
+  flex-direction: column;
+}
+.paper .push {
+  list-style: none;
+}
+.paper .push li {
+  position: relative;
+  padding: 10px 0 10px 20px;
+  cursor: pointer;
+}
+.paper .push li:before {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #424953;
+  content: "";
+  left: 0;
+  transition: 0.3s ease-in-out;
+  top: 17px;
+}
+.paper .push li:after {
+  position: absolute;
+  border-left: 1px dotted #4F5151;
+  width: 2px;
+  bottom: -10px;
+  content: "";
+  left: 3px;
+  top: 30px;
+}
+.paper .push li:hover:before {
+  box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.paper .push li:last-child:after {
+  content: none;
+}
+
+/*# sourceMappingURL=style.css.map */

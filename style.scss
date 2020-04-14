@@ -1,0 +1,175 @@
+$col-dark: #424953;
+$col-white: #f4f2f3;
+$col-orange: #b18324;
+
+body {
+  box-sizing: border-box;
+  font-family: "Open Sans";
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  position: relative;
+  margin: 20px 0;
+  padding-bottom: 20px;
+
+  &:after {
+    content: "";
+    color: $col-dark;
+    border: 1px solid $col-dark;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+  }
+}
+
+.h-1 {
+  font-size: 25px;
+  position: relative;
+  margin: 20px 0;
+  padding-bottom: 20px;
+
+  &:after {
+    content: "";
+    color: $col-dark;
+    border: 1px solid $col-dark;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+  }
+}
+
+.h-2 {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px 0;
+  margin-bottom: 20px;
+  position: relative;
+
+  &:after {
+    content: "";
+    color: $col-white;
+    border: 1px solid $col-white;
+    width: 325px;
+    position: absolute;
+    bottom: 0px;
+    right: -25px;
+  }
+}
+
+.weight-bold {
+  font-weight: bold;
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+
+.paper {
+  display: flex;
+  width: 1000px;
+//width: 210mm;
+  //height: 297mm;
+  // height: 800px;
+
+  .photo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+
+    #my-photo {
+      width: 250px;
+      border-radius: 50%;
+    }
+  }
+
+
+  .main-data {
+    flex: 1;
+    background: $col-dark;
+    color: $col-white;
+    padding: 50px 25px;
+
+    .main-data-item {
+      margin: 10px 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    a{
+      color: $col-white;
+    }
+img{
+  width: 40px;
+  margin-top: 10px;
+}
+  }
+
+  .additional-data {
+    flex: 2;
+    background: $col-white;
+    color: $col-dark;
+    padding: 50px 25px;
+
+    a{
+      color: $col-orange;
+    }
+    .projects{
+      p{
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+  }
+
+  .push {
+    list-style: none;
+  }
+
+  .push li {
+    position: relative;
+    padding: 10px 0 10px 20px;
+    cursor: pointer;
+  }
+
+  .push li:before {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: $col-dark;
+    content: "";
+    left: 0;
+    transition: .3s ease-in-out;
+    top: 17px;
+  }
+
+  .push li:after {
+    position: absolute;
+    border-left: 1px dotted #4F5151;
+    width: 2px;
+    bottom: -10px;
+    content: "";
+    left: 3px;
+    top: 30px;
+  }
+
+  .push li:hover:before {
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, .2)
+  }
+
+  .push li:last-child:after {
+    content: none;
+  }
+
+
+}
+
