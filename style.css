@@ -79,7 +79,7 @@ h1:after {
 }
 .paper .main-data {
   flex: 1;
-  background: #424953;
+  background: linear-gradient(90deg, #424953 0%, #33373d 100%);
   color: #f4f2f3;
   padding: 50px 25px;
 }
